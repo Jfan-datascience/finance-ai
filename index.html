@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonathan Fan — Fanance.ai</title>
+  <meta name="description" content="Jonathan Fan — Finance meets AI. Strategic advisor helping founders and operators think clearly about money, systems, and growth." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Jonathan Fan</a>
+      <ul class="nav-links">
+        <li><a href="#about" data-en="About" data-zh="關於我">About</a></li>
+        <li><a href="#work" data-en="Writing" data-zh="文章">Writing</a></li>
+        <li><a href="#services" data-en="Services" data-zh="服務">Services</a></li>
+        <li><a href="#subscribe" class="nav-cta" data-en="Get in touch" data-zh="聯絡我">Get in touch</a></li>
+        <li>
+          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+            <span class="lang-en">中文</span>
+            <span class="lang-zh" hidden>EN</span>
+          </button>
+        </li>
+      </ul>
+      <div class="nav-right-mobile">
+        <button class="lang-toggle lang-toggle--mobile" id="lang-toggle-mobile" aria-label="Switch language">
+          <span class="lang-en">中文</span>
+          <span class="lang-zh" hidden>EN</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+      <a href="#about" data-en="About" data-zh="關於我">About</a>
+      <a href="#work" data-en="Writing" data-zh="文章">Writing</a>
+      <a href="#services" data-en="Services" data-zh="服務">Services</a>
+      <a href="#subscribe" data-en="Get in touch" data-zh="聯絡我">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Finance × AI</p>
+        <h1 class="hero-headline">
+          <span data-en>I help people think<br />more clearly about<br /><em>money &amp; systems.</em></span>
+          <span data-zh hidden>幫助人們更清晰地<br />思考<br /><em>財務與系統。</em></span>
+        </h1>
+        <p class="hero-sub">
+          <span data-en>I'm Jonathan. I've spent years at the intersection of finance, operations, and AI — distilling decades of real-world experience into insights that actually matter.</span>
+          <span data-zh hidden>我是Jonathan。多年來穿梭於金融、營運與AI之間——將數十年的實戰經驗提煉成真正有價值的洞見。</span>
+        </p>
+        <div class="hero-actions">
+          <a href="#subscribe" class="btn btn-primary" data-en="Join the list" data-zh="訂閱電子報">Join the list</a>
+          <a href="#services" class="btn btn-ghost" data-en="Work with me" data-zh="與我合作">Work with me</a>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-placeholder" id="hero-img">
+          <img src="images/jonathan.jpg" alt="Jonathan Fan" />
+        </div>
+        <div class="hero-tag">fanance.ai</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <span data-en>Finance</span><span data-zh hidden>金融</span>
+      <span class="dot">·</span>
+      <span data-en>AI Strategy</span><span data-zh hidden>AI策略</span>
+      <span class="dot">·</span>
+      <span data-en>Ops &amp; Systems</span><span data-zh hidden>營運與系統</span>
+      <span class="dot">·</span>
+      <span data-en>Clear Thinking</span><span data-zh hidden>清晰思維</span>
+      <span class="dot">·</span>
+      <span data-en>Founder Advice</span><span data-zh hidden>創辦人顧問</span>
+      <span class="dot">·</span>
+      <span data-en>Finance</span><span data-zh hidden>金融</span>
+      <span class="dot">·</span>
+      <span data-en>AI Strategy</span><span data-zh hidden>AI策略</span>
+      <span class="dot">·</span>
+      <span data-en>Ops &amp; Systems</span><span data-zh hidden>營運與系統</span>
+      <span class="dot">·</span>
+      <span data-en>Clear Thinking</span><span data-zh hidden>清晰思維</span>
+      <span class="dot">·</span>
+      <span data-en>Founder Advice</span><span data-zh hidden>創辦人顧問</span>
+      <span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <p class="section-label" data-en="About" data-zh="關於我">About</p>
+          <h2 class="section-headline">
+            <span data-en>I didn't set out to be a finance person.</span>
+            <span data-zh hidden>我從來不是「財務人」出身。</span>
+          </h2>
+        </div>
+        <div class="about-right">
+          <!-- EN -->
+          <p data-en>I've always been fascinated by how businesses really work — the messy decisions made with incomplete information, and why smart people so often make predictably bad financial calls.</p>
+          <p data-en>That curiosity led me through finance, operations, and now AI. Along the way, I've pulled together decades of real-world experience and mentorship into something sharper. I started <strong>Fanance.ai</strong> to share the condensed version: counterintuitive insights that actually matter.</p>
+          <p data-en>No hype, no fluff — just my two cents, straight from the trenches. Financial clarity, practical AI workflows, and the mental models that quietly run companies.</p>
+          <!-- ZH -->
+          <p data-zh hidden>我一直著迷於企業真實運轉的底層邏輯——在資訊不完整的情況下如何做決策，以及為什麼聰明人會反覆犯下那些可預測的財務錯誤。</p>
+          <p data-zh hidden>這份好奇心帶領我走過金融、營運，現在進入AI領域。這些年，我把數十年的實戰經驗和導師指點濃縮提煉。我創立 <strong>Fanance.ai</strong>，就是為了分享這些經過濃縮的洞見：那些真正有價值的、反直覺的思考。</p>
+          <p data-zh hidden>沒有炒作，沒有廢話——只有來自實戰壕溝的直接觀點。財務清晰度、實用的AI工作流程，以及那些默默主導企業運營的心智模型。</p>
+          <a href="#subscribe" class="about-link" data-en="Read my writing →" data-zh="閱讀我的文章 →">Read my writing →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / TOPICS -->
+  <section class="section work" id="work">
+    <div class="container">
+      <p class="section-label" data-en="What I write about" data-zh="我寫什麼">What I write about</p>
+      <h2 class="section-headline">
+        <span data-en>Three things I think about constantly.</span>
+        <span data-zh hidden>三個我持續深思的主題。</span>
+      </h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-num">01</div>
+          <h3 data-en="Financial Clarity" data-zh="財務清晰度">Financial Clarity</h3>
+          <p>
+            <span data-en>Most financial confusion isn't about math — it's about mental models. I break down how to actually read a business, understand cash flow, and make decisions under uncertainty.</span>
+            <span data-zh hidden>大多數財務困惑不在於數學——而在於心智模型。我拆解如何真正讀懂一門生意、理解現金流，並在不確定性中做出決策。</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-num">02</div>
+          <h3 data-en="AI × Ops" data-zh="AI × 營運">AI × Ops</h3>
+          <p>
+            <span data-en>AI doesn't replace thinking. It amplifies it. I explore where AI tools genuinely change how operators work — and where they just add noise.</span>
+            <span data-zh hidden>AI不會取代思考，它會放大思考。我探索AI工具真正改變營運方式的地方——以及它只是製造噪音的地方。</span>
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-num">03</div>
+          <h3 data-en="Founder Decisions" data-zh="創辦人決策">Founder Decisions</h3>
+          <p>
+            <span data-en>The hardest calls founders face are usually financial. I write about pricing, burn, hiring leverage, and the moments that define a company's trajectory.</span>
+            <span data-zh hidden>創辦人面臨的最難抉擇通常是財務性的。我寫定價、燒錢率、招募槓桿，以及那些定義公司軌跡的關鍵時刻。</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="services-header">
+        <p class="section-label" data-en="Work with me" data-zh="與我合作">Work with me</p>
+        <h2 class="section-headline">
+          <span data-en>Two ways I can help.</span>
+          <span data-zh hidden>兩種合作方式。</span>
+        </h2>
+        <p class="services-sub">
+          <span data-en>I take on a limited number of advisory engagements each month. If you're a founder or operator trying to think more clearly about finance or AI, I'd love to talk.</span>
+          <span data-zh hidden>我每月接受有限數量的顧問合作。如果您是創辦人或營運主管，希望更清晰地思考財務或AI問題，歡迎聯絡。</span>
+        </p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-top">
+            <h3 data-en="1:1 Session" data-zh="一對一諮詢">1:1 Session</h3>
+            <div class="price">$200<span data-en="/hour" data-zh="/小時">/hour</span></div>
+          </div>
+          <ul class="pricing-list">
+            <li data-en="60-minute focused call" data-zh="60分鐘專注通話">60-minute focused call</li>
+            <li data-en="Financial model review or teardown" data-zh="財務模型審查或拆解">Financial model review or teardown</li>
+            <li data-en="AI workflow strategy" data-zh="AI工作流程策略">AI workflow strategy</li>
+            <li data-en="Operator decision frameworks" data-zh="營運決策框架">Operator decision frameworks</li>
+            <li data-en="Follow-up notes &amp; resources" data-zh="後續筆記與資源">Follow-up notes &amp; resources</li>
+          </ul>
+          <a href="mailto:jonathan@fanance.ai?subject=1:1 Session Inquiry" class="btn btn-primary" data-en="Book a session" data-zh="預約諮詢">Book a session</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-badge" data-en="Most Popular" data-zh="最受歡迎">Most Popular</div>
+          <div class="pricing-top">
+            <h3 data-en="Project Sprint" data-zh="專案衝刺">Project Sprint</h3>
+            <div class="price">$450<span data-en="/project" data-zh="/專案">/project</span></div>
+          </div>
+          <ul class="pricing-list">
+            <li data-en="Deep-dive on one defined problem" data-zh="針對一個明確問題深入分析">Deep-dive on one defined problem</li>
+            <li data-en="Financial analysis or AI integration audit" data-zh="財務分析或AI整合審查">Financial analysis or AI integration audit</li>
+            <li data-en="Async collaboration over 1–2 weeks" data-zh="1–2週非同步協作">Async collaboration over 1–2 weeks</li>
+            <li data-en="Written deliverable + recommendations" data-zh="書面交付成果＋建議">Written deliverable + recommendations</li>
+            <li data-en="One follow-up call included" data-zh="含一次後續通話">One follow-up call included</li>
+          </ul>
+          <a href="mailto:jonathan@fanance.ai?subject=Project Sprint Inquiry" class="btn btn-primary" data-en="Start a project" data-zh="開始專案">Start a project</a>
+        </div>
+      </div>
+      <p class="services-note">
+        <span data-en>Not sure which fits? <a href="mailto:jonathan@fanance.ai">Send me a quick note</a> and I'll point you in the right direction.</span>
+        <span data-zh hidden>不確定哪種方式適合？<a href="mailto:jonathan@fanance.ai">傳訊息給我</a>，我來幫您釐清。</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- EMAIL SUBSCRIBE -->
+  <section class="section subscribe" id="subscribe">
+    <div class="container">
+      <div class="subscribe-inner">
+        <div class="subscribe-text">
+          <p class="section-label" data-en="The Newsletter" data-zh="電子報">The Newsletter</p>
+          <h2 class="section-headline">
+            <span data-en>Think better about money &amp; AI.</span>
+            <span data-zh hidden>更清晰地思考財務與AI。</span>
+          </h2>
+          <p>
+            <span data-en>I send short, useful pieces on finance, AI, and clear thinking — no fluff, no sales, no weekly obligation. Join when it's useful, leave when it's not.</span>
+            <span data-zh hidden>我分享簡短實用的財務、AI與清晰思維文章——沒有廢話，沒有推銷，沒有每週義務。有用時加入，不合適時離開。</span>
+          </p>
+          <ul class="subscribe-proof">
+            <li>
+              <span data-en>Essays on financial mental models</span>
+              <span data-zh hidden>財務心智模型文章</span>
+            </li>
+            <li>
+              <span data-en>AI tools that actually move the needle</span>
+              <span data-zh hidden>真正有效的AI工具</span>
+            </li>
+            <li>
+              <span data-en>Behind-the-scenes on how I work</span>
+              <span data-zh hidden>我的工作方式幕後分享</span>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe-form-wrap">
+          <form class="subscribe-form" id="subscribe-form" action="#" method="post">
+            <label for="email-input" class="form-label" data-en="Your email" data-zh="您的電子郵件">Your email</label>
+            <div class="form-row">
+              <input
+                type="email"
+                id="email-input"
+                name="email"
+                placeholder="you@example.com"
+                required
+                autocomplete="email"
+              />
+              <button type="submit" class="btn btn-primary" data-en="Subscribe" data-zh="訂閱">Subscribe</button>
+            </div>
+            <p class="form-fine">
+              <span data-en>No spam. Unsubscribe anytime. I respect your inbox.</span>
+              <span data-zh hidden>不發垃圾郵件。隨時可退訂。我尊重您的收件匣。</span>
+            </p>
+            <div class="form-success" id="form-success" aria-live="polite" hidden>
+              <span data-en>✓ You're in. Talk soon.</span>
+              <span data-zh hidden>✓ 已訂閱。期待與您交流。</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <span class="footer-logo">Fanance.ai</span>
+          <p>Finance × AI — by Jonathan Fan</p>
+        </div>
+        <div class="footer-links">
+          <a href="#about" data-en="About" data-zh="關於我">About</a>
+          <a href="#services" data-en="Services" data-zh="服務">Services</a>
+          <a href="mailto:jonathan@fanance.ai">Email</a>
+          <a href="https://linkedin.com/in/jonathanfan" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Jonathan Fan · Fanance.ai</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
