@@ -1,272 +1,390 @@
-
 <!DOCTYPE html>
 <html lang="en" data-lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jonathan Fan — Fanance.ai</title>
-  <meta name="description" content="Jonathan Fan — Finance meets AI. Strategic advisor helping founders and operators think clearly about money, systems, and growth." />
+  <title>Fanance.ai — Jonathan Fan, CFO</title>
+  <meta name="description" content="Jonathan Fan — CFO, content creator, and fractional finance advisor. Helping founders and finance pros build real careers." />
+  <meta property="og:title" content="Fanance.ai — Jonathan Fan, CFO" />
+  <meta property="og:description" content="CFO insights, fractional advisory, and a growing library of resources for ambitious finance professionals." />
+  <meta property="og:url" content="https://fanance.ai" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Serif+Display:ital@0;1&family=Space+Mono:wght@400;700&family=Noto+Serif+TC:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <!-- NAV -->
-  <nav class="nav" id="nav">
+  <header class="nav" id="nav">
     <div class="nav-inner">
-      <a href="#" class="nav-logo">Jonathan Fan</a>
-      <ul class="nav-links">
-        <li><a href="#about" data-en="About" data-zh="關於我">About</a></li>
-        <li><a href="#work" data-en="Writing" data-zh="文章">Writing</a></li>
-        <li><a href="#services" data-en="Services" data-zh="服務">Services</a></li>
-        <li><a href="#subscribe" class="nav-cta" data-en="Get in touch" data-zh="聯絡我">Get in touch</a></li>
-        <li>
-          <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-            <span class="lang-en">中文</span>
-            <span class="lang-zh" hidden>EN</span>
-          </button>
-        </li>
-      </ul>
-      <div class="nav-right-mobile">
-        <button class="lang-toggle lang-toggle--mobile" id="lang-toggle-mobile" aria-label="Switch language">
-          <span class="lang-en">中文</span>
-          <span class="lang-zh" hidden>EN</span>
-        </button>
-        <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <a href="/" class="nav-logo">
+        <span class="logo-mark">F</span><span class="logo-text">fanance.ai</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" data-en="About" data-zh="關於我">About</a>
+        <a href="blog.html" data-en="Writing" data-zh="文章">Writing</a>
+        <a href="library.html" data-en="Library" data-zh="資源庫">Library</a>
+        <a href="#services" data-en="Work With Me" data-zh="合作諮詢">Work With Me</a>
+        <a href="#newsletter" class="nav-cta" data-en="Subscribe" data-zh="訂閱">Subscribe</a>
+      </nav>
+      <div class="nav-right">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN / 中</button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
-    <div class="nav-mobile" id="nav-mobile">
-      <a href="#about" data-en="About" data-zh="關於我">About</a>
-      <a href="#work" data-en="Writing" data-zh="文章">Writing</a>
-      <a href="#services" data-en="Services" data-zh="服務">Services</a>
-      <a href="#subscribe" data-en="Get in touch" data-zh="聯絡我">Get in touch</a>
-    </div>
-  </nav>
+  </header>
 
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-eyebrow">Finance × AI</p>
+        <div class="hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          <span data-en="CFO · Creator · Advisor" data-zh="財務長 · 創作者 · 顧問">CFO · Creator · Advisor</span>
+        </div>
         <h1 class="hero-headline">
-          <span data-en>I help people think<br />more clearly about<br /><em>money &amp; systems.</em></span>
-          <span data-zh hidden>幫助人們更清晰地<br />思考<br /><em>財務與系統。</em></span>
+          <span data-en="Failed at 24." data-zh="24歲當CFO，">Failed at 24.</span><br>
+          <em data-en="Built something real" data-zh="然後失敗了—">Built something real</em><br>
+          <span data-en="from it." data-zh="那才是真正的起點。">from it.</span>
         </h1>
-        <p class="hero-sub">
-          <span data-en>I'm Jonathan. I've spent years at the intersection of finance, operations, and AI — distilling decades of real-world experience into insights that actually matter.</span>
-          <span data-zh hidden>我是Jonathan。多年來穿梭於金融、營運與AI之間——將數十年的實戰經驗提煉成真正有價值的洞見。</span>
-        </p>
+        <p class="hero-sub" data-en="I'm Jonathan Fan — CFO who raised $81M, worked across 6 industries, and now shares what school never taught about finance, leadership, and building a career that actually matters." data-zh="我是 Jonathan Fan — 協助募資 $81M 的財務長，橫跨6個產業，現在分享學校從未教過的財務、領導力與職涯真相。">I'm Jonathan Fan — CFO who raised $81M, worked across 6 industries, and now shares what school never taught about finance, leadership, and building a career that actually matters.</p>
         <div class="hero-actions">
-          <a href="#subscribe" class="btn btn-primary" data-en="Join the list" data-zh="訂閱電子報">Join the list</a>
-          <a href="#services" class="btn btn-ghost" data-en="Work with me" data-zh="與我合作">Work with me</a>
+          <a href="#services" class="btn btn-primary" data-en="Book a Session" data-zh="預約諮詢">Book a Session</a>
+          <a href="blog.html" class="btn btn-ghost" data-en="Read the Blog" data-zh="閱讀文章">Read the Blog</a>
+        </div>
+        <div class="hero-social-strip">
+          <a href="https://www.instagram.com/thejonathanfan" target="_blank" rel="noopener" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            @thejonathanfan
+          </a>
+          <a href="https://www.youtube.com/@TheJonFan" target="_blank" rel="noopener" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            YouTube
+          </a>
+          <a href="https://www.facebook.com/jonathanfanCFO" target="_blank" rel="noopener" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://www.linkedin.com/in/jonfan" target="_blank" rel="noopener" class="social-pill">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
         </div>
       </div>
-      <div class="hero-image-wrap">
-        <div class="hero-image-placeholder" id="hero-img">
-          <img src="jonathan.JPG" alt="Jonathan Fan" />
+      <div class="hero-visual">
+        <div class="hero-graphic">
+          <div class="graphic-ring ring-1"></div>
+          <div class="graphic-ring ring-2"></div>
+          <div class="graphic-ring ring-3"></div>
+          <div class="graphic-center">
+            <div class="graphic-icon">
+              <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="graphic-label">空中MBA</span>
+          </div>
+          <div class="graphic-stat gs-1"><span class="gs-num">$81M</span><span class="gs-text" data-en="Raised" data-zh="募資">Raised</span></div>
+          <div class="graphic-stat gs-2"><span class="gs-num">400K+</span><span class="gs-text" data-en="Views" data-zh="觀看">Views</span></div>
+          <div class="graphic-stat gs-3"><span class="gs-num">6</span><span class="gs-text" data-en="Industries" data-zh="產業">Industries</span></div>
+          <div class="graphic-stat gs-4"><span class="gs-num">31+</span><span class="gs-text" data-en="Countries" data-zh="國家">Countries</span></div>
         </div>
-        <div class="hero-tag">fanance.ai</div>
       </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span data-en="Scroll to explore" data-zh="向下探索">Scroll to explore</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee-wrap">
+  <div class="marquee-strip" aria-hidden="true">
     <div class="marquee-track">
-      <span data-en>Finance</span><span data-zh hidden>金融</span>
-      <span class="dot">·</span>
-      <span data-en>AI Strategy</span><span data-zh hidden>AI策略</span>
-      <span class="dot">·</span>
-      <span data-en>Ops &amp; Systems</span><span data-zh hidden>營運與系統</span>
-      <span class="dot">·</span>
-      <span data-en>Clear Thinking</span><span data-zh hidden>清晰思維</span>
-      <span class="dot">·</span>
-      <span data-en>Founder Advice</span><span data-zh hidden>創辦人顧問</span>
-      <span class="dot">·</span>
-      <span data-en>Finance</span><span data-zh hidden>金融</span>
-      <span class="dot">·</span>
-      <span data-en>AI Strategy</span><span data-zh hidden>AI策略</span>
-      <span class="dot">·</span>
-      <span data-en>Ops &amp; Systems</span><span data-zh hidden>營運與系統</span>
-      <span class="dot">·</span>
-      <span data-en>Clear Thinking</span><span data-zh hidden>清晰思維</span>
-      <span class="dot">·</span>
-      <span data-en>Founder Advice</span><span data-zh hidden>創辦人顧問</span>
-      <span class="dot">·</span>
+      <span>CFO Advisory</span><span class="marquee-dot">·</span>
+      <span>VC Fundraising</span><span class="marquee-dot">·</span>
+      <span>空中MBA</span><span class="marquee-dot">·</span>
+      <span>Finance Career</span><span class="marquee-dot">·</span>
+      <span>Board Dynamics</span><span class="marquee-dot">·</span>
+      <span>Mental Models</span><span class="marquee-dot">·</span>
+      <span>Series E Veteran</span><span class="marquee-dot">·</span>
+      <span>6 Industries</span><span class="marquee-dot">·</span>
+      <span>Intel · AMD · Chowbus</span><span class="marquee-dot">·</span>
+      <span>UT McCombs</span><span class="marquee-dot">·</span>
+      <span>CPA · AFP Panelist</span><span class="marquee-dot">·</span>
+      <span>CFO Advisory</span><span class="marquee-dot">·</span>
+      <span>VC Fundraising</span><span class="marquee-dot">·</span>
+      <span>空中MBA</span><span class="marquee-dot">·</span>
+      <span>Finance Career</span><span class="marquee-dot">·</span>
+      <span>Board Dynamics</span><span class="marquee-dot">·</span>
+      <span>Mental Models</span><span class="marquee-dot">·</span>
     </div>
   </div>
 
-  <!-- ABOUT -->
-  <section class="section about" id="about">
+  <!-- CREDS BAR -->
+  <section class="creds-section">
     <div class="container">
-      <div class="about-grid">
-        <div class="about-left">
-          <p class="section-label" data-en="About" data-zh="關於我">About</p>
-          <h2 class="section-headline">
-            <span data-en>I didn't set out to be a finance person.</span>
-            <span data-zh hidden>我從來不是「財務人」出身。</span>
-          </h2>
+      <p class="creds-label" data-en="Experience &amp; credentials" data-zh="經歷與資歷">Experience &amp; credentials</p>
+      <div class="creds-row">
+        <div class="cred-item">
+          <span class="cred-name">UT McCombs</span>
+          <span class="cred-detail">BBA + MPA</span>
         </div>
-        <div class="about-right">
-          <!-- EN -->
-          <p data-en>I've always been fascinated by how businesses really work — the messy decisions made with incomplete information, and why smart people so often make predictably bad financial calls.</p>
-          <p data-en>That curiosity led me through finance, operations, and now AI. Along the way, I've pulled together decades of real-world experience and mentorship into something sharper. I started <strong>Fanance.ai</strong> to share the condensed version: counterintuitive insights that actually matter.</p>
-          <p data-en>No hype, no fluff — just my two cents, straight from the trenches. Financial clarity, practical AI workflows, and the mental models that quietly run companies.</p>
-          <!-- ZH -->
-          <p data-zh hidden>我一直著迷於企業真實運轉的底層邏輯——在資訊不完整的情況下如何做決策，以及為什麼聰明人會反覆犯下那些可預測的財務錯誤。</p>
-          <p data-zh hidden>這份好奇心帶領我走過金融、營運，現在進入AI領域。這些年，我把數十年的實戰經驗和導師指點濃縮提煉。我創立 <strong>Fanance.ai</strong>，就是為了分享這些經過濃縮的洞見：那些真正有價值的、反直覺的思考。</p>
-          <p data-zh hidden>沒有炒作，沒有廢話——只有來自實戰壕溝的直接觀點。財務清晰度、實用的AI工作流程，以及那些默默主導企業運營的心智模型。</p>
-          <a href="#subscribe" class="about-link" data-en="Read my writing →" data-zh="閱讀我的文章 →">Read my writing →</a>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-name">CPA</span>
+          <span class="cred-detail" data-en="Licensed" data-zh="持照">Licensed</span>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-name">AFP</span>
+          <span class="cred-detail" data-en="FP&amp;A Panelist 2026" data-zh="FP&A 講者 2026">FP&amp;A Panelist 2026</span>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-name">Intel · AMD</span>
+          <span class="cred-detail" data-en="Fortune 500" data-zh="財星500大">Fortune 500</span>
+        </div>
+        <div class="cred-divider"></div>
+        <div class="cred-item">
+          <span class="cred-name">$81M</span>
+          <span class="cred-detail" data-en="Series E Raised" data-zh="E輪募資">Series E Raised</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WORK / TOPICS -->
-  <section class="section work" id="work">
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-left">
+        <div class="section-tag" data-en="About" data-zh="關於我">About</div>
+        <h2 data-en="The CFO who chose to talk about it." data-zh="選擇說出來的那個財務長。">The CFO who chose to talk about it.</h2>
+        <div class="about-divider"></div>
+      </div>
+      <div class="about-right">
+        <p data-en="I started my career chasing a title. At 24, I became a CFO at a startup — and it nearly broke me. What they don't tell you: the sleepless board meetings, the fundraising rejections, the loneliness of being the only finance person in a room full of dreamers." data-zh="我的職涯從追逐頭銜開始。24歲，我成為一家新創的財務長，差點把自己壓垮。沒人告訴你：熬夜的董事會、一次次的募資失敗、在一群夢想家中獨撐財務的孤獨感。">I started my career chasing a title. At 24, I became a CFO at a startup — and it nearly broke me. What they don't tell you: the sleepless board meetings, the fundraising rejections, the loneliness of being the only finance person in a room full of dreamers.</p>
+        <p data-en="I went on to work across 6 industries — Intel, AMD, Chowbus, Kandi, Outdoorsy — before finding my footing. Along the way I helped raise $81M in a Series E, built FP&amp;A functions from scratch, and ended up on an AFP panel talking about it." data-zh="我橫跨6個產業——Intel、AMD、Chowbus、Kandi、Outdoorsy——直到找到自己的位置。過程中協助完成 $81M 的 E 輪募資，從零建立 FP&A 團隊，最後在 AFP 論壇上分享這一切。">I went on to work across 6 industries — Intel, AMD, Chowbus, Kandi, Outdoorsy — before finding my footing. Along the way I helped raise $81M in a Series E, built FP&amp;A functions from scratch, and ended up on an AFP panel talking about it.</p>
+        <p data-en="Now I create content under the 空中MBA (Air MBA) brand — helping finance professionals and founders learn what school skips. 400K+ views, 31 countries, and still going." data-zh="現在我用「空中MBA」品牌持續創作——讓財務人與創業者學到學校跳過的東西。400K+ 觀看，橫跨31個國家，還在繼續。">Now I create content under the 空中MBA (Air MBA) brand — helping finance professionals and founders learn what school skips. 400K+ views, 31 countries, and still going.</p>
+        <a href="#services" class="about-cta" data-en="Work with me →" data-zh="與我合作 →">Work with me →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG PREVIEW -->
+  <section class="topics-section" id="writing">
     <div class="container">
-      <p class="section-label" data-en="What I write about" data-zh="我寫什麼">What I write about</p>
-      <h2 class="section-headline">
-        <span data-en>Three things I think about constantly.</span>
-        <span data-zh hidden>三個我持續深思的主題。</span>
-      </h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-num">01</div>
-          <h3 data-en="Financial Clarity" data-zh="財務清晰度">Financial Clarity</h3>
-          <p>
-            <span data-en>Most financial confusion isn't about math — it's about mental models. I break down how to actually read a business, understand cash flow, and make decisions under uncertainty.</span>
-            <span data-zh hidden>大多數財務困惑不在於數學——而在於心智模型。我拆解如何真正讀懂一門生意、理解現金流，並在不確定性中做出決策。</span>
-          </p>
+      <div class="section-header">
+        <div class="section-tag" data-en="Writing" data-zh="文章">Writing</div>
+        <h2 data-en="Ideas worth your time." data-zh="值得你花時間的洞見。">Ideas worth your time.</h2>
+        <p class="section-sub" data-en="Real insights from the trenches of CFO life, fundraising, and building a finance career in the modern era." data-zh="來自財務長戰場的真實洞見——募資、職涯，與現代財務人的生存之道。">Real insights from the trenches of CFO life, fundraising, and building a finance career in the modern era.</p>
+      </div>
+      <div class="posts-grid">
+        <article class="post-card post-card--featured">
+          <div class="post-tag" data-en="CFO Life" data-zh="財務長日常">CFO Life</div>
+          <h3 data-en="What No One Tells You About Becoming a CFO Before 30" data-zh="30歲前當CFO，沒人告訴你的事">What No One Tells You About Becoming a CFO Before 30</h3>
+          <p data-en="The title looks great on paper. The reality is messier, lonelier, and more instructive than anything I studied at McCombs." data-zh="頭銜在紙上很好看，現實卻更混亂、更孤獨，也比我在 McCombs 學過的任何東西更有啟發。">The title looks great on paper. The reality is messier, lonelier, and more instructive than anything I studied at McCombs.</p>
+          <a href="blog.html" class="post-link" data-en="Read more →" data-zh="繼續閱讀 →">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-tag" data-en="Fundraising" data-zh="募資">Fundraising</div>
+          <h3 data-en="How We Closed an $81M Series E in a Down Market" data-zh="在熊市中完成 $81M E 輪募資">How We Closed an $81M Series E in a Down Market</h3>
+          <p data-en="Three things we did differently. One thing almost killed the deal." data-zh="我們做了三件不一樣的事，其中一件差點毀掉整個交易。">Three things we did differently. One thing almost killed the deal.</p>
+          <a href="blog.html" class="post-link" data-en="Read more →" data-zh="繼續閱讀 →">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-tag" data-en="Career" data-zh="職涯">Career</div>
+          <h3 data-en="The Finance Career Ladder Is a Lie. Here's the Real Map." data-zh="財務職涯的晉升階梯是謊言，這才是真正的地圖。">The Finance Career Ladder Is a Lie. Here's the Real Map.</h3>
+          <p data-en="Six industries, multiple titles, and one hard truth about how finance careers actually advance." data-zh="六個產業、多個頭銜，以及一個關於財務職涯如何真正晉升的殘酷真相。">Six industries, multiple titles, and one hard truth about how finance careers actually advance.</p>
+          <a href="blog.html" class="post-link" data-en="Read more →" data-zh="繼續閱讀 →">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-tag" data-en="Mental Models" data-zh="思維模型">Mental Models</div>
+          <h3 data-en="20 Wisdom Principles I Wish I Had at 22" data-zh="我希望22歲就知道的20條智慧法則">20 Wisdom Principles I Wish I Had at 22</h3>
+          <p data-en="Distilled from six industries, two degrees, and a lot of expensive mistakes." data-zh="從六個產業、兩個學位和無數代價昂貴的錯誤中提煉而來。">Distilled from six industries, two degrees, and a lot of expensive mistakes.</p>
+          <a href="blog.html" class="post-link" data-en="Read more →" data-zh="繼續閱讀 →">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-tag" data-en="AI Era" data-zh="AI時代">AI Era</div>
+          <h3 data-en="What AI Means for Finance Professionals in 2025" data-zh="AI 對財務人的意義：2025年版">What AI Means for Finance Professionals in 2025</h3>
+          <p data-en="Not doom. Not hype. A practical look at how CFOs and FP&amp;A teams are actually using these tools." data-zh="不是末日，也不是炒作——實際看 CFO 和 FP&A 團隊如何使用這些工具。">Not doom. Not hype. A practical look at how CFOs and FP&amp;A teams are actually using these tools.</p>
+          <a href="blog.html" class="post-link" data-en="Read more →" data-zh="繼續閱讀 →">Read more →</a>
+        </article>
+        <article class="post-card">
+          <div class="post-tag" data-en="VC / Startups" data-zh="創業 / VC">VC / Startups</div>
+          <h3 data-en="Board Meetings That Almost Killed Me (And What I Learned)" data-zh="差點害死我的董事會議（以及我學到的事）">Board Meetings That Almost Killed Me (And What I Learned)</h3>
+          <p data-en="War stories and survival tactics from the other side of the table." data-zh="來自桌子另一端的戰場故事與生存戰術。">War stories and survival tactics from the other side of the table.</p>
+          <a href="blog.html" class="post-link" data-en="Read more →" data-zh="繼續閱讀 →">Read more →</a>
+        </article>
+      </div>
+      <div class="section-footer-link">
+        <a href="blog.html" class="btn btn-outline" data-en="View all articles →" data-zh="查看所有文章 →">View all articles →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIBRARY TEASER -->
+  <section class="library-teaser">
+    <div class="container">
+      <div class="library-teaser-inner">
+        <div class="library-teaser-left">
+          <div class="section-tag" data-en="Resource Library" data-zh="資源庫">Resource Library</div>
+          <h2 data-en="Everything I give away in my videos — organized in one place." data-zh="我在影片中免費分享的所有資源，整理在同一個地方。">Everything I give away in my videos — organized in one place.</h2>
+          <p data-en="25+ guides on CFO strategy, VC fundraising, career acceleration, AI for finance, and more. Available to members." data-zh="25+ 份指南，涵蓋 CFO 策略、VC 募資、職涯加速、財務AI等。限會員使用。">25+ guides on CFO strategy, VC fundraising, career acceleration, AI for finance, and more. Available to members.</p>
+          <div class="library-resource-list">
+            <div class="lib-item"><span class="lib-icon">📄</span><span data-en="CFO Blueprint" data-zh="CFO 藍圖">CFO Blueprint</span></div>
+            <div class="lib-item"><span class="lib-icon">📄</span><span data-en="VC Fundraising 101 Guide" data-zh="VC 募資入門指南">VC Fundraising 101 Guide</span></div>
+            <div class="lib-item"><span class="lib-icon">📄</span><span data-en="Career Accelerator" data-zh="職涯加速指南">Career Accelerator</span></div>
+            <div class="lib-item"><span class="lib-icon">📄</span><span data-en="AI Era: 20 Wisdom Principles" data-zh="AI時代20條智慧">AI Era: 20 Wisdom Principles</span></div>
+            <div class="lib-item lib-item--more"><span class="lib-icon">+</span><span data-en="21 more resources..." data-zh="另外21份資源...">21 more resources...</span></div>
+          </div>
+          <a href="library.html" class="btn btn-primary" data-en="Access the Library — $4.99/mo" data-zh="進入資源庫 — $4.99/月">Access the Library — $4.99/mo</a>
         </div>
-        <div class="card">
-          <div class="card-num">02</div>
-          <h3 data-en="AI × Ops" data-zh="AI × 營運">AI × Ops</h3>
-          <p>
-            <span data-en>AI doesn't replace thinking. It amplifies it. I explore where AI tools genuinely change how operators work — and where they just add noise.</span>
-            <span data-zh hidden>AI不會取代思考，它會放大思考。我探索AI工具真正改變營運方式的地方——以及它只是製造噪音的地方。</span>
-          </p>
-        </div>
-        <div class="card">
-          <div class="card-num">03</div>
-          <h3 data-en="Founder Decisions" data-zh="創辦人決策">Founder Decisions</h3>
-          <p>
-            <span data-en>The hardest calls founders face are usually financial. I write about pricing, burn, hiring leverage, and the moments that define a company's trajectory.</span>
-            <span data-zh hidden>創辦人面臨的最難抉擇通常是財務性的。我寫定價、燒錢率、招募槓桿，以及那些定義公司軌跡的關鍵時刻。</span>
-          </p>
+        <div class="library-teaser-right">
+          <div class="library-shelf">
+            <div class="shelf-row">
+              <div class="shelf-book sb-1"><span>CFO<br>Blueprint</span></div>
+              <div class="shelf-book sb-2"><span>VC<br>Guide</span></div>
+              <div class="shelf-book sb-3"><span>Career<br>Accel.</span></div>
+            </div>
+            <div class="shelf-row">
+              <div class="shelf-book sb-4"><span>AI<br>Era</span></div>
+              <div class="shelf-book sb-5"><span>Mind-<br>set</span></div>
+              <div class="shelf-book sb-6"><span>Board<br>Prep</span></div>
+            </div>
+            <div class="shelf-line"></div>
+            <div class="shelf-lock">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+              <span data-en="Members only" data-zh="限會員">Members only</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section class="section services" id="services">
+  <section class="services-section" id="services">
     <div class="container">
-      <div class="services-header">
-        <p class="section-label" data-en="Work with me" data-zh="與我合作">Work with me</p>
-        <h2 class="section-headline">
-          <span data-en>Two ways I can help.</span>
-          <span data-zh hidden>兩種合作方式。</span>
-        </h2>
-        <p class="services-sub">
-          <span data-en>I take on a limited number of advisory engagements each month. If you're a founder or operator trying to think more clearly about finance or AI, I'd love to talk.</span>
-          <span data-zh hidden>我每月接受有限數量的顧問合作。如果您是創辦人或營運主管，希望更清晰地思考財務或AI問題，歡迎聯絡。</span>
-        </p>
+      <div class="section-header">
+        <div class="section-tag" data-en="Work With Me" data-zh="合作方式">Work With Me</div>
+        <h2 data-en="Real help. Real outcomes." data-zh="真實的幫助，真實的成果。">Real help. Real outcomes.</h2>
+        <p class="section-sub" data-en="Whether you're a founder, a finance pro, or someone figuring out what's next — I've probably been there." data-zh="無論你是創業者、財務人，還是正在思考下一步的人——我很可能走過同樣的路。">Whether you're a founder, a finance pro, or someone figuring out what's next — I've probably been there.</p>
       </div>
+
+      <!-- Free consult banner -->
+      <div class="consult-banner">
+        <div class="consult-banner-left">
+          <span class="badge-free" data-en="Free · 15 min" data-zh="免費 · 15分鐘">Free · 15 min</span>
+          <h3 data-en="Not sure where to start? Book a free discovery call." data-zh="不確定從哪裡開始？預約免費探索通話。">Not sure where to start? Book a free discovery call.</h3>
+          <p data-en="Tell me what you're working on. I'll tell you honestly if I can help — and how." data-zh="告訴我你在做什麼，我會誠實地告訴你我能不能幫上忙，以及怎麼幫。">Tell me what you're working on. I'll tell you honestly if I can help — and how.</p>
+        </div>
+        <div class="consult-banner-right">
+          <form class="consult-form" id="consultForm">
+            <div class="form-row">
+              <input type="text" name="name" placeholder="Your name" required class="form-input" />
+              <input type="email" name="email" placeholder="Email address" required class="form-input" />
+            </div>
+            <textarea name="message" placeholder="What are you working on? What do you need help with?" rows="3" required class="form-input"></textarea>
+            <button type="submit" class="btn btn-primary btn-full" id="consultBtn">
+              <span data-en="Request a call →" data-zh="申請通話 →">Request a call →</span>
+            </button>
+          </form>
+          <div class="form-success" id="consultSuccess" hidden>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-en="Got it. I'll review your request and reach out within 48 hours." data-zh="收到了。我會審核您的申請並在48小時內回覆。">Got it. I'll review your request and reach out within 48 hours.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pricing -->
       <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="pricing-top">
-            <h3 data-en="1:1 Session" data-zh="一對一諮詢">1:1 Session</h3>
-            <div class="price">$200<span data-en="/hour" data-zh="/小時">/hour</span></div>
+        <div class="pricing-card fade-up">
+          <div class="pricing-card-top">
+            <div class="pricing-label" data-en="1:1 Advisory" data-zh="一對一顧問">1:1 Advisory</div>
+            <div class="pricing-price">$200<span data-en="/hr" data-zh="/小時">/hr</span></div>
+            <p class="pricing-desc" data-en="Direct access to my brain. We dig into your specific situation — fundraising strategy, FP&amp;A structure, career pivots, hiring your first finance person." data-zh="直接與我討論。深入分析你的具體情況——募資策略、FP&A 架構、職涯轉型、招募第一位財務人員。">Direct access to my brain. We dig into your specific situation — fundraising strategy, FP&amp;A structure, career pivots, hiring your first finance person.</p>
           </div>
-          <ul class="pricing-list">
-            <li data-en="60-minute focused call" data-zh="60分鐘專注通話">60-minute focused call</li>
-            <li data-en="Financial model review or teardown" data-zh="財務模型審查或拆解">Financial model review or teardown</li>
-            <li data-en="AI workflow strategy" data-zh="AI工作流程策略">AI workflow strategy</li>
-            <li data-en="Operator decision frameworks" data-zh="營運決策框架">Operator decision frameworks</li>
-            <li data-en="Follow-up notes &amp; resources" data-zh="後續筆記與資源">Follow-up notes &amp; resources</li>
+          <ul class="pricing-features">
+            <li data-en="60-min focused session" data-zh="60分鐘聚焦會議">60-min focused session</li>
+            <li data-en="Pre-call questionnaire" data-zh="事前問卷">Pre-call questionnaire</li>
+            <li data-en="Follow-up summary notes" data-zh="事後摘要筆記">Follow-up summary notes</li>
+            <li data-en="Action items &amp; resources" data-zh="行動項目與資源">Action items &amp; resources</li>
           </ul>
-          <a href="mailto:jonathan@fanance.ai?subject=1:1 Session Inquiry" class="btn btn-primary" data-en="Book a session" data-zh="預約諮詢">Book a session</a>
+          <a href="mailto:jonathan@fanance.ai?subject=1:1%20Advisory%20Session" class="btn btn-outline btn-full" data-en="Book a session →" data-zh="預約會議 →">Book a session →</a>
         </div>
-        <div class="pricing-card pricing-card--featured">
-          <div class="pricing-badge" data-en="Most Popular" data-zh="最受歡迎">Most Popular</div>
-          <div class="pricing-top">
-            <h3 data-en="Project Sprint" data-zh="專案衝刺">Project Sprint</h3>
-            <div class="price">$450<span data-en="/project" data-zh="/專案">/project</span></div>
+        <div class="pricing-card pricing-card--featured fade-up">
+          <div class="pricing-badge" data-en="Most popular" data-zh="最受歡迎">Most popular</div>
+          <div class="pricing-card-top">
+            <div class="pricing-label" data-en="Fractional CFO Sprint" data-zh="分散式財務長衝刺">Fractional CFO Sprint</div>
+            <div class="pricing-price">$600<span data-en="/project" data-zh="/專案">/project</span></div>
+            <p class="pricing-desc" data-en="A focused engagement for founders who need a real CFO — but not full time. We define the problem, build the model, and leave you with a system that works." data-zh="專為需要真正 CFO 但不需全職的創業者設計。我們定義問題、建立模型，並為你留下一套可運作的系統。">A focused engagement for founders who need a real CFO — but not full time. We define the problem, build the model, and leave you with a system that works.</p>
           </div>
-          <ul class="pricing-list">
-            <li data-en="Deep-dive on one defined problem" data-zh="針對一個明確問題深入分析">Deep-dive on one defined problem</li>
-            <li data-en="Financial analysis or AI integration audit" data-zh="財務分析或AI整合審查">Financial analysis or AI integration audit</li>
-            <li data-en="Async collaboration over 1–2 weeks" data-zh="1–2週非同步協作">Async collaboration over 1–2 weeks</li>
-            <li data-en="Written deliverable + recommendations" data-zh="書面交付成果＋建議">Written deliverable + recommendations</li>
-            <li data-en="One follow-up call included" data-zh="含一次後續通話">One follow-up call included</li>
+          <ul class="pricing-features">
+            <li data-en="Scoped deliverable defined upfront" data-zh="事先明確定義交付項目">Scoped deliverable defined upfront</li>
+            <li data-en="Financial model or fundraising deck" data-zh="財務模型或募資簡報">Financial model or fundraising deck</li>
+            <li data-en="2 rounds of revisions" data-zh="2輪修改">2 rounds of revisions</li>
+            <li data-en="30-day async Q&amp;A access" data-zh="30天非同步問答">30-day async Q&amp;A access</li>
+            <li data-en="Investor narrative guidance" data-zh="投資者敘事指導">Investor narrative guidance</li>
           </ul>
-          <a href="mailto:jonathan@fanance.ai?subject=Project Sprint Inquiry" class="btn btn-primary" data-en="Start a project" data-zh="開始專案">Start a project</a>
+          <a href="mailto:jonathan@fanance.ai?subject=Fractional%20CFO%20Sprint" class="btn btn-primary btn-full" data-en="Start a project →" data-zh="開始專案 →">Start a project →</a>
+        </div>
+        <div class="pricing-card fade-up">
+          <div class="pricing-card-top">
+            <div class="pricing-label" data-en="Speaking" data-zh="演講">Speaking</div>
+            <div class="pricing-price pricing-price--sm" data-en="Let's talk" data-zh="讓我們談談">Let's talk</div>
+            <p class="pricing-desc" data-en="I speak on CFO leadership, FP&amp;A transformation, AI in finance, and the realities of building a finance career in the startup era. AFP 2026 panelist." data-zh="我演講主題涵蓋 CFO 領導力、FP&A 轉型、財務AI，以及在新創時代建立財務職涯的真實面貌。AFP 2026講者。">I speak on CFO leadership, FP&amp;A transformation, AI in finance, and the realities of building a finance career in the startup era. AFP 2026 panelist.</p>
+          </div>
+          <ul class="pricing-features">
+            <li data-en="Keynote &amp; panel appearances" data-zh="主題演講與小組討論">Keynote &amp; panel appearances</li>
+            <li data-en="Corporate workshops" data-zh="企業工作坊">Corporate workshops</li>
+            <li data-en="University guest lectures" data-zh="大學客座演講">University guest lectures</li>
+            <li data-en="Podcast appearances" data-zh="Podcast 受訪">Podcast appearances</li>
+          </ul>
+          <a href="mailto:jonathan@fanance.ai?subject=Speaking%20Inquiry" class="btn btn-outline btn-full" data-en="Get in touch →" data-zh="聯絡我 →">Get in touch →</a>
         </div>
       </div>
-      <p class="services-note">
-        <span data-en>Not sure which fits? <a href="mailto:jonathan@fanance.ai">Send me a quick note</a> and I'll point you in the right direction.</span>
-        <span data-zh hidden>不確定哪種方式適合？<a href="mailto:jonathan@fanance.ai">傳訊息給我</a>，我來幫您釐清。</span>
-      </p>
     </div>
   </section>
 
-  <!-- EMAIL SUBSCRIBE -->
-  <section class="section subscribe" id="subscribe">
+  <!-- PULL QUOTE -->
+  <section class="pullquote-section">
     <div class="container">
-      <div class="subscribe-inner">
-        <div class="subscribe-text">
-          <p class="section-label" data-en="The Newsletter" data-zh="電子報">The Newsletter</p>
-          <h2 class="section-headline">
-            <span data-en>Think better about money &amp; AI.</span>
-            <span data-zh hidden>更清晰地思考財務與AI。</span>
-          </h2>
-          <p>
-            <span data-en>I send short, useful pieces on finance, AI, and clear thinking — no fluff, no sales, no weekly obligation. Join when it's useful, leave when it's not.</span>
-            <span data-zh hidden>我分享簡短實用的財務、AI與清晰思維文章——沒有廢話，沒有推銷，沒有每週義務。有用時加入，不合適時離開。</span>
-          </p>
-          <ul class="subscribe-proof">
-            <li>
-              <span data-en>Essays on financial mental models</span>
-              <span data-zh hidden>財務心智模型文章</span>
-            </li>
-            <li>
-              <span data-en>AI tools that actually move the needle</span>
-              <span data-zh hidden>真正有效的AI工具</span>
-            </li>
-            <li>
-              <span data-en>Behind-the-scenes on how I work</span>
-              <span data-zh hidden>我的工作方式幕後分享</span>
-            </li>
+      <blockquote class="pullquote">
+        <p data-en="&ldquo;The content Jonathan creates is genuinely rare — the kind of financial honesty you only get from someone who has actually been in the room.&rdquo;" data-zh="「Jonathan 創作的內容真的很罕見——那種財務上的誠實，只有真正待過那個房間的人才能給出。」">&ldquo;The content Jonathan creates is genuinely rare — the kind of financial honesty you only get from someone who has actually been in the room.&rdquo;</p>
+        <cite>— AFP Conference Attendee, 2025</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-left">
+          <div class="section-tag" data-en="Newsletter" data-zh="電子報">Newsletter</div>
+          <h2>空中MBA<br><em data-en="The Newsletter" data-zh="電子報">The Newsletter</em></h2>
+          <p data-en="Finance insights, career frameworks, and behind-the-scenes CFO reality — delivered every other week. No fluff. No corporate speak. Just the stuff that actually moves the needle." data-zh="財務洞見、職涯框架，以及財務長真實日常——每兩週一次。沒有廢話，沒有企業套話，只有真正有用的東西。">Finance insights, career frameworks, and behind-the-scenes CFO reality — delivered every other week. No fluff. No corporate speak. Just the stuff that actually moves the needle.</p>
+          <ul class="newsletter-proof">
+            <li data-en="Readers in 31+ countries" data-zh="來自31+個國家的讀者">Readers in 31+ countries</li>
+            <li data-en="Free · Unsubscribe anytime" data-zh="免費 · 隨時退訂">Free · Unsubscribe anytime</li>
+            <li data-en="Published every other week" data-zh="每兩週發行">Published every other week</li>
           </ul>
         </div>
-        <div class="subscribe-form-wrap">
-          <form class="subscribe-form" id="subscribe-form" action="#" method="post">
-            <label for="email-input" class="form-label" data-en="Your email" data-zh="您的電子郵件">Your email</label>
-            <div class="form-row">
-              <input
-                type="email"
-                id="email-input"
-                name="email"
-                placeholder="you@example.com"
-                required
-                autocomplete="email"
-              />
-              <button type="submit" class="btn btn-primary" data-en="Subscribe" data-zh="訂閱">Subscribe</button>
-            </div>
-            <p class="form-fine">
-              <span data-en>No spam. Unsubscribe anytime. I respect your inbox.</span>
-              <span data-zh hidden>不發垃圾郵件。隨時可退訂。我尊重您的收件匣。</span>
-            </p>
-            <div class="form-success" id="form-success" aria-live="polite" hidden>
-              <span data-en>✓ You're in. Talk soon.</span>
-              <span data-zh hidden>✓ 已訂閱。期待與您交流。</span>
-            </div>
+        <div class="newsletter-right">
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="text" name="name" placeholder="First name" required class="form-input" />
+            <input type="email" name="email" placeholder="Your email" required class="form-input" />
+            <button type="submit" class="btn btn-primary btn-full" id="newsletterBtn">
+              <span data-en="Join the Newsletter →" data-zh="加入電子報 →">Join the Newsletter →</span>
+            </button>
+            <p class="form-disclaimer" data-en="No spam. Unsubscribe anytime." data-zh="不發垃圾郵件，隨時可以退訂。">No spam. Unsubscribe anytime.</p>
           </form>
+          <div class="form-success" id="newsletterSuccess" hidden>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <p data-en="You're in! Check your inbox for a welcome note." data-zh="成功訂閱！請查看收件匣的歡迎信。">You're in! Check your inbox for a welcome note.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -274,21 +392,52 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div class="footer-left">
-          <span class="footer-logo">Fanance.ai</span>
-          <p>Finance × AI — by Jonathan Fan</p>
-        </div>
-        <div class="footer-links">
-          <a href="#about" data-en="About" data-zh="關於我">About</a>
-          <a href="#services" data-en="Services" data-zh="服務">Services</a>
-          <a href="mailto:jonathan@fanance.ai">Email</a>
-          <a href="https://linkedin.com/in/jonathanfan" target="_blank" rel="noopener">LinkedIn</a>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">fanance.ai</a>
+        <p data-en="CFO insights for the real world." data-zh="給真實世界的財務長洞見。">CFO insights for the real world.</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/thejonathanfan" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@TheJonFan" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/jonathanfanCFO" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/jonfan" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
       </div>
-      <div class="footer-bottom">
-        <p>© 2026 Jonathan Fan · Fanance.ai</p>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4 data-en="Pages" data-zh="頁面">Pages</h4>
+          <a href="#about" data-en="About" data-zh="關於我">About</a>
+          <a href="blog.html" data-en="Writing" data-zh="文章">Writing</a>
+          <a href="library.html" data-en="Library" data-zh="資源庫">Library</a>
+          <a href="#services" data-en="Services" data-zh="服務">Services</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Follow" data-zh="追蹤">Follow</h4>
+          <a href="https://www.instagram.com/thejonathanfan" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.youtube.com/@TheJonFan" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.facebook.com/jonathanfanCFO" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.linkedin.com/in/jonfan" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-en="Contact" data-zh="聯絡方式">Contact</h4>
+          <a href="mailto:jonathan@fanance.ai">jonathan@fanance.ai</a>
+          <a href="#newsletter" data-en="Newsletter" data-zh="電子報">Newsletter</a>
+          <a href="mailto:jonathan@fanance.ai?subject=Speaking%20Inquiry" data-en="Speaking" data-zh="演講邀請">Speaking</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <span>© 2025 fanance.ai · Jonathan Fan</span>
+        <span data-en="Built for the ambitious." data-zh="為有抱負的人而建。">Built for the ambitious.</span>
       </div>
     </div>
   </footer>
